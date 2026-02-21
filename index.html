@@ -1,1 +1,160 @@
-apa bisa
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roblox Indonesia - Link Sosial</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  overflow:hidden;
+}
+
+/* Container Animation */
+.container{
+  width:90%;
+  max-width:380px;
+  text-align:center;
+  padding:25px;
+  border-radius:25px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  opacity:0;
+  transform:scale(0.9);
+  animation: containerIn 0.8s ease forwards;
+}
+
+@keyframes containerIn{
+  to{
+    opacity:1;
+    transform:scale(1);
+  }
+}
+
+/* Profile Animation */
+.profile-img{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  border:4px solid #00f2fe;
+  object-fit:cover;
+  margin-bottom:15px;
+  opacity:0;
+  transform:translateY(-20px);
+  animation: profileIn 0.8s ease forwards;
+  animation-delay:0.4s;
+}
+
+@keyframes profileIn{
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+h1{
+  color:#fff;
+  font-size:22px;
+  margin-bottom:5px;
+}
+
+.bio{
+  color:#ccc;
+  font-size:14px;
+  margin-bottom:20px;
+}
+
+/* Link Base */
+.link{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  text-decoration:none;
+  margin:12px 0;
+  padding:14px;
+  border-radius:15px;
+  font-weight:bold;
+  color:white;
+  transition:0.3s;
+  font-size:16px;
+  opacity:0;
+  transform:translateY(20px);
+  animation: linkIn 0.6s ease forwards;
+}
+
+@keyframes linkIn{
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+.link:hover{
+  transform: scale(1.05);
+  box-shadow:0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* Brand Colors */
+.youtube{ background:#FF0000; animation-delay:0.6s; }
+.tiktok{ background:#000000; animation-delay:0.8s; }
+.whatsapp{ background:#3FE55D; animation-delay:1s; }
+.roblox{ background:#335FFE; animation-delay:1.2s; }
+
+.footer{
+  margin-top:15px;
+  font-size:12px;
+  color:#aaa;
+  opacity:0;
+  animation: linkIn 0.6s ease forwards;
+  animation-delay:1.4s;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  
+  <img src="profile_logo_roblox_indonesia.png" class="profile-img">
+  
+  <h1>Roblox Indonesia</h1>
+  <div class="bio">Creator Roblox & Web Developer</div>
+
+  <a href="https://youtube.com/@roblox_indonesia-com" class="link youtube">
+    <i class="fab fa-youtube"></i> YouTube
+  </a>
+
+  <a href="https://tiktok.com/@roblox_indonesia.com" class="link tiktok">
+    <i class="fab fa-tiktok"></i> Tiktok
+  </a>
+
+  <a href="https://whatsapp.com/channel/0029Vb6UNgl9Gv7RnXIlkT1X" class="link whatsapp">
+    <i class="fab fa-whatsapp"></i> whatsapp
+  </a>
+
+  <a href="https://ro.blox.com/Ebh5?pid=Profile&is_retargeting=false&af_dp=roblox%3A%2F%2Fnavigation%2Fshare_links%3Fcode%3D8731b476121d684d90e94e5884f4892d%26type%3DProfile%26source%3DProfileShare&deep_link_value=roblox%3A%2F%2Fnavigation%2Fshare_links%3Fcode%3D8731b476121d684d90e94e5884f4892d%26type%3DProfile%26source%3DProfileShare&af_web_dp=https%3A%2F%2Fwww.roblox.com%2Fshare-links%3Fcode%3D8731b476121d684d90e94e5884f4892d%26type%3DProfile%26source%3DProfileShare" class="link roblox">
+    <img src="ic_launcher_foreground_roblox.png" width="15" height="15"> Roblox
+  </a>
+
+  <div class="footer">© 2026 Roblox Indonesia</div>
+
+</div>
+
+</body>
+</html>
