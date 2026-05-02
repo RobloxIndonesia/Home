@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home - Roblox Indonesia</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#fff;
+}
+
+/* HEADER */
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1px 10px;
+    background:#e9e9e9;
+}
+
+.menu-btn{
+    font-size:25px;
+    cursor:pointer;
+    border:none;
+    background:none;
+}
+
+.right-icons{
+    display:flex;
+    gap:15px;
+    align-items:center;
+}
+
+.profile{
+    width:30px;
+    height:30px;
+    background: #aaaaaa;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.search{
+    font-size:20px;
+    background:#dcdcdc;
+    padding:2px 10px;
+    border-radius:5px;
+}
+
+/* NAV */
+.nav{
+    display:flex;
+    justify-content:space-around;
+    background:#e9e9e9;
+    padding-bottom:1px;
+    font-size:15px;
+}
+
+.nav a{
+    text-decoration:none;
+    color:black;
+    padding:5px 5px;
+}
+
+.active{
+    border-bottom:2px solid black;
+    font-weight:bold;
+}
+
+/* CONTENT */
+.content{
+    min-height:10px;
+}
+
+/* FOOTER */
+.footer-links{
+    display:flex;
+    justify-content:space-around;
+    padding:10px 10px;
+    font-size:15px;
+}
+
+.footer-links a{
+    text-decoration:none;
+    color:#333;
+}
+
+hr{
+    margin:0 5px;
+    border:0;
+    border-top:1px solid #ccc;
+}
+
+.copyright{
+    text-align:center;
+    padding:10px 0;
+    color:#555;
+}
+
+/* DROPDOWN MENU */
+.sidebar{
+    height:100%;
+    width:0;
+    position:fixed;
+    top:0;
+    left:0;
+    background:white;
+    overflow-x:hidden;
+    transition:0.3s;
+    box-shadow:2px 0 10px rgba(0,0,0,0.2);
+    padding-top:60px;
+}
+
+.sidebar a{
+    display:block;
+    padding:15px 25px;
+    text-decoration:none;
+    color:black;
+    font-size:20px;
+}
+
+.sidebar a:hover{
+    background:#f1f1f1;
+}
+
+.close-btn{
+    position:absolute;
+    top:10px;
+    right:20px;
+    font-size:35px;
+    cursor:pointer;
+}
+     
+.desain {
+    padding: 7px;
+    margin-top: 1px;
+            
+.desain1 {
+    width: 330px;  
+    background: #dddddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    box-shadow: 0 2px 5px
+    rgba(0,0,0,0.1);
+}
+
+.img {
+    width: 330px;
+}
+
+button {
+    padding: 8px 15px;
+    cursor: pointer;
+}
+input {
+    width: 300px;
+    padding: 8px;
+}
+</style>
+</head>
+<body>
+
+<!-- Sidebar Dropdown -->
+<div id="menuDropdown" class="sidebar">
+    <span class="close-btn" onclick="closeMenu()">×</span>
+    <a href="#">keadaan koneksi server roblox</a>
+    <a href="#">kode² di game roblox</a>
+    <a href="#">tutorial di roblox</a>
+    <a href="#">karakter terkenal di roblox</a>
+    <a href="#">hubungi kami</a>
+</div>
+
+<!-- Header -->
+<div class="header">
+    <button class="menu-btn" onclick="openMenu()">☰</button>
+  
+    <img src="logo.png" width="100">
+
+    <div class="right-icons">
+        <!-- Foto profile -->
+        <a href="profil.html"><img src="https://RobloxIndonesia.github.io/img//30DAY-AvatarHeadshot-ED6E504DCD0989309333C3F87B84DC2E.png" class="profile" alt="Profile"></a>
+        <div class="search">⌕</div>
+     </div>
+</div>
+
+<!-- Nav -->
+<div class="nav">
+    <a href="home.html" class="active">Home</a>
+    <a href="games-tren.html">Game Tren</a>
+    <a href="berita.html">Berita</a>
+    <a href="sejarah.html">Sejarah</a>
+</div>
+
+<div class="desain">
+<h3><font color="#ff0000">Berita Roblox</font></h3>
+<div class="desain1"> <img class="img" src="https://cms-media.roblox.com/resize=width:600,fit:max/HztvWCCyQEWfGVBGPIRa" alt=""><h3>Roblox Meluncurkan Fitur Baru Bernama Roblox Kids Dan Roblox Select</h3>
+<a href="#"><h>baca selengkapnya -></h></a></div>
+
+<div class="desain1"> <img class="img" src="https://cms-media.roblox.com/resize=width:600,fit:max/21sluBrTSGxFGfp5Tmgn" alt=""><h3>Roblox Meluncurkan Fitur Baru Bernama Roblox Plus</h3>
+<a href="#"><h>baca selengkapnya -></h></a></div>
+
+</div>
+<div class="desain">
+<h3><font color="#ff8800">Games Populer Sepanjang Masa</font></h3>
+
+<div class="desain1"><h4>#1 Brookhaven</h4>
+<img class="img" src="https://tr.rbxcdn.com/180DAY-5cd26374a411e2d4a741e6ac8c752458/768/432/Image/Webp/noFilter" alt="">
+<h>Aktif Rata² : 200 ~ 500Rb+<br>
+Favorit : 27.287.166<br>
+Kunjungan : 81.7M+<br>
+Dibuat : 21/4/2020<br>
+Ukuran Server : 28<br>
+Genre : Role Play & Simulasi Avatar<br>
+Subgenre : Kehidupan<br>
+</h></div>
+
+<div class="desain1"><h4>#2 Stel A Brainrot</h4>
+<img class="img" src="https://tr.rbxcdn.com/180DAY-bfcc710b1a232b34e2d3b40f963f8cde/768/432/Image/Webp/noFilter" alt="">
+<h>Aktif Rata² : 100 ~ 500Rb+<br>
+Favorit : 27.713.620<br>
+Kunjungan : 67.4M+<br>
+Dibuat : 16/5/2025<br>
+Ukuran Server : 8<br>
+Genre : Simulasi<br>
+Subgenre : Tycoon<br>
+</h></div>
+
+<div class="desain1"><h4>#3 Blox Fruits</h4>
+<img class="img" src="https://tr.rbxcdn.com/180DAY-e1ce51abae5188805c3fee78ec7f4d08/768/432/Image/Webp/noFilter" alt="">
+<h>Aktif Rata² : 100Rb ~ 500Rb+<br>
+Favorit : 18.670.483<br>
+Kunjungan : 61.0M+<br>
+Dibuat : 16/1/2019<br>
+Ukuran Server : 12<br>
+Genre : RPG<br>
+Subgenre : RPG Antion<br>
+</h></div>
+
+</div>
+<div class="desain">
+<h4>Keadaan Server Roblox</h4>
+<div class="desain1"> <iframe src="https://status.roblox.com/"
+        width="325"
+        height="400"
+        allowfullscreen>
+      </iframe>
+</div>
+
+</div>
+
+<div class="content"></div>
+
+<div class="footer-links">
+    <a href="#">Tentang Kami</a>
+    <a href="#">Bantuan</a>
+    <a href="#">Privasi</a>
+    <a href="#">Situs Peta</a>
+</div>
+
+<hr>
+
+<div class="copyright">
+    ©2026 Roblox Indonesia.
+</div>
+
+<script>
+function openMenu(){
+    document.getElementById("menuDropdown").style.width = "250px";
+}
+
+function closeMenu(){
+    document.getElementById("menuDropdown").style.width = "0";
+}
+</script>
+
+</body>
+</html>
